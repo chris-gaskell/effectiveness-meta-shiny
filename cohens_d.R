@@ -48,12 +48,6 @@ lookup.tab <- lookup %>%
   mutate(es = stringr::str_replace(es, fixed(" "), "")) %>%
   distinct()
 
-lookup.tab %>% filter(es == d.lookup) %>% distinct(group, setting, .keep_all = T)
-
-lookup %>% filter(es == )
-
-lookup %>% filter(es == d.lookup() & setting == input$setting & group == input$group) %>% distinct(2, 3, .keep_all = T) %>% select(es)
-
 
 
 
