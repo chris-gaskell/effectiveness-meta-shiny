@@ -1,0 +1,11 @@
+name: effectiveness-meta-shiny
+title:
+username:
+account: chris-gaskell
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8276296
+bundleId: 6831069
+url: https://chris-gaskell.shinyapps.io/effectiveness-meta-shiny/
+when: 1676013344.77704
+lastSyncTime: 1676013344.77705
