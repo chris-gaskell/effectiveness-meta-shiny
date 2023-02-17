@@ -1,0 +1,811 @@
+group,setting,n,es,var,ci.lb,ci.ub,centile,measure.type
+depression,all,6,-0.23,0.24,-1.19,0.74,0.71,PHQ-9
+depression,all,85,0.08,0.01,-0.11,0.27,1.43,CESD-10
+depression,all,29,0.13,0.03,-0.2,0.46,2.14,BDI
+depression,all,9,0.16,0.09,-0.43,0.75,2.86,BDI
+depression,all,34,0.22,0.02,-0.08,0.53,3.57,BDI
+depression,all,112,0.29,0.01,0.12,0.46,4.29,BDI
+depression,all,26,0.33,0.03,-0.02,0.69,5,PHQ-9
+depression,all,111,0.34,0.01,0.16,0.51,5.71,DASS (Depression)
+depression,all,14,0.37,0.06,-0.12,0.86,6.43,BDI
+depression,all,17,0.38,0.05,-0.06,0.83,7.14,BDI
+depression,all,37,0.38,0.02,0.08,0.68,7.14,BDI
+depression,all,125,0.4,0.01,0.24,0.57,8.57,DASS (Depression)
+depression,all,269,0.44,0,0.33,0.55,9.29,TOP (Depression)
+depression,all,8,0.44,0.11,-0.22,1.09,9.29,SCL (Depression)
+depression,all,24,0.46,0.05,0.02,0.89,10.71,PHQ-9
+depression,all,17,0.47,0.05,0.01,0.92,12.14,BDI
+depression,all,56,0.47,0.01,0.24,0.7,12.14,BDI
+depression,all,10,0.47,0.09,-0.12,1.07,12.14,PHQ-9
+depression,all,55,0.47,0.02,0.23,0.72,12.14,BDI
+depression,all,26,0.48,0.01,0.27,0.69,14.29,PHQ-9
+depression,all,45,0.5,0.03,0.17,0.83,15,SCL (Depression)
+depression,all,116,0.51,0.01,0.34,0.69,15.71,HADS (Depression)
+depression,all,4980,0.57,0,0.54,0.6,16.43,PHQ-9
+depression,all,89,0.58,0.01,0.38,0.78,17.14,GHQ (Depression)
+depression,all,607,0.58,0,0.49,0.67,17.14,HADS (Depression)
+depression,all,19,0.59,0.05,0.15,1.04,19.29,PHQ-9
+depression,all,13,0.59,0.08,0.06,1.13,19.29,BDI
+depression,all,405,0.59,0,0.49,0.68,19.29,BDI
+depression,all,23,0.6,0.04,0.19,1,20.71,SCL (Depression)
+depression,all,19,0.6,0.09,0.02,1.19,20.71,PHQ-9
+depression,all,88,0.61,0.02,0.34,0.88,22.14,BSI (Depression)
+depression,all,30,0.62,0.03,0.26,0.97,22.86,BSI (Depression)
+depression,all,833,0.63,0,0.56,0.69,23.57,BDI
+depression,all,9895,0.64,0,0.62,0.66,24.29,CCAPS (Depression)
+depression,all,71,0.64,0.03,0.33,0.95,24.29,BDI
+depression,all,32,0.66,0.03,0.31,1.01,25.71,BDI
+depression,all,21,0.66,0.07,0.15,1.18,25.71,BSI (Depression)
+depression,all,263,0.68,0,0.55,0.8,27.14,PHQ-9
+depression,all,776,0.68,0,0.6,0.75,27.14,BDI
+depression,all,23,0.7,0.05,0.29,1.12,29.29,BSI (Depression)
+depression,all,10,0.7,0.1,0.07,1.34,29.29,BDI
+depression,all,334,0.7,0,0.59,0.81,29.29,BDI
+depression,all,60,0.71,0.02,0.45,0.96,30.71,BDI
+depression,all,28,0.72,0.04,0.34,1.1,31.43,PHQ-9
+depression,all,410,0.72,0,0.63,0.8,31.43,BDI
+depression,all,59,0.73,0.02,0.45,1.01,32.86,BDI
+depression,all,546,0.74,0,0.66,0.83,33.57,BDI
+depression,all,26,0.76,0.04,0.36,1.16,34.29,BDI
+depression,all,14,0.81,0.08,0.25,1.36,35,PHQ-9
+depression,all,38,0.82,0.05,0.4,1.23,36.43,DASS (Depression)
+depression,all,246,0.82,0.01,0.66,0.98,36.43,BDI
+depression,all,30,0.82,0.04,0.44,1.2,36.43,PHQ-9
+depression,all,28,0.85,0.04,0.45,1.25,37.86,BDI
+depression,all,170,0.85,0.01,0.62,1.08,37.86,BDI
+depression,all,206,0.86,0.01,0.7,1.01,39.29,BSI (Depression)
+depression,all,453,0.87,0,0.77,0.97,40,BDI
+depression,all,62,0.88,0.02,0.61,1.16,40.71,BDI
+depression,all,193,0.88,0.01,0.73,1.04,40.71,BDI
+depression,all,7,0.89,0.17,0.08,1.71,42.14,CESD-10
+depression,all,12,0.89,0.1,0.27,1.51,42.14,CESD-10
+depression,all,32,0.9,0.04,0.52,1.28,44.29,BDI
+depression,all,50,0.9,0.02,0.59,1.2,44.29,BDI
+depression,all,342,0.9,0,0.78,1.02,44.29,BDI
+depression,all,93,0.91,0.01,0.67,1.14,45.71,PHQ-9
+depression,all,400,0.92,0,0.81,1.03,46.43,BDI
+depression,all,232,0.92,0.01,0.78,1.06,46.43,PHQ-9
+depression,all,60,0.93,0.02,0.65,1.21,48.57,BDI
+depression,all,48,0.93,0.03,0.61,1.24,48.57,BDI
+depression,all,11,0.93,0.11,0.28,1.59,48.57,BDI
+depression,all,23595,0.94,0,0.92,0.95,50,PHQ-9
+depression,all,249,0.95,0.01,0.81,1.09,50.71,BDI
+depression,all,9648,0.95,0,0.92,0.97,50.71,PHQ-9
+depression,all,46,0.96,0.01,0.8,1.12,52.14,BDI
+depression,all,330,0.97,0,0.85,1.09,52.86,BDI
+depression,all,20,0.99,0.06,0.49,1.48,53.57,HADS (Depression)
+depression,all,23,0.99,0.06,0.53,1.46,53.57,BDI
+depression,all,83,1,0.01,0.76,1.24,55,BDI
+depression,all,105,1.01,0.03,0.65,1.37,55.71,BDI
+depression,all,981,1.01,0,0.94,1.09,55.71,BDI
+depression,all,85,1.03,0.02,0.78,1.27,57.86,BDI
+depression,all,19,1.03,0.07,0.51,1.55,57.86,PHQ-9
+depression,all,78,1.03,0.01,0.79,1.26,57.86,BDI
+depression,all,116,1.03,0.02,0.78,1.28,57.86,PHQ-9
+depression,all,55,1.05,0.03,0.73,1.37,60,MMPI (Depression)
+depression,all,21,1.05,0.06,0.55,1.55,60,BDI
+depression,all,137,1.06,0.01,0.83,1.29,62.14,BSI (Depression)
+depression,all,217,1.06,0.01,0.9,1.21,62.14,BDI
+depression,all,7,1.06,0.19,0.2,1.92,62.14,BDI
+depression,all,951,1.08,0,1.01,1.16,63.57,CESD-10
+depression,all,47,1.09,0.04,0.72,1.46,64.29,PHQ-9
+depression,all,56,1.1,0.03,0.79,1.41,65,SCL (Depression)
+depression,all,101,1.12,0.02,0.88,1.37,66.43,BDI
+depression,all,234,1.12,0.01,0.96,1.27,66.43,SCL (Depression)
+depression,all,25,1.12,0.06,0.65,1.59,66.43,BDI
+depression,all,119,1.12,0.01,0.9,1.33,66.43,BDI
+depression,all,12,1.13,0.12,0.44,1.81,68.57,HADS (Depression)
+depression,all,25,1.15,0.06,0.68,1.63,69.29,BDI
+depression,all,429,1.16,0,1.02,1.29,70,PHQ-9
+depression,all,994,1.17,0,1.1,1.25,70.71,PHQ-9
+depression,all,45,1.19,0.03,0.83,1.55,72.14,BDI
+depression,all,245,1.19,0.01,1.04,1.35,72.14,PHQ-9
+depression,all,219,1.19,0.01,1.03,1.35,72.14,PHQ-9
+depression,all,514,1.2,0,1.09,1.31,73.57,SCL (Depression)
+depression,all,40,1.2,0.04,0.81,1.58,73.57,BDI
+depression,all,158,1.22,0.01,1.02,1.42,75,SCL (Depression)
+depression,all,36,1.22,0.04,0.82,1.63,75,PHQ-9
+depression,all,17,1.24,0.09,0.64,1.83,76.43,BDI
+depression,all,38,1.24,0.04,0.84,1.63,76.43,BDI
+depression,all,20,1.25,0.08,0.7,1.81,77.86,SCL (Depression)
+depression,all,51,1.25,0.04,0.87,1.64,77.86,BDI
+depression,all,6,1.28,0.29,0.22,2.34,79.29,BDI
+depression,all,163,1.29,0.01,1.09,1.48,80,PHQ-9
+depression,all,1084,1.33,0,1.24,1.42,80.71,BDI
+depression,all,20,1.34,0.08,0.79,1.89,81.43,BDI
+depression,all,70,1.38,0.03,1.07,1.69,82.14,BDI
+depression,all,38,1.4,0.05,0.98,1.82,82.86,BDI
+depression,all,24,1.41,0.07,0.87,1.94,84.29,BDI
+depression,all,160,1.41,0.01,1.2,1.62,84.29,BDI
+depression,all,44,1.41,0.04,1.01,1.8,84.29,BDI
+depression,all,338,1.42,0.01,1.28,1.56,85.71,BDI
+depression,all,38,1.46,0.05,1.02,1.89,86.43,BDI
+depression,all,14,1.49,0.14,0.76,2.21,87.14,BDI
+depression,all,31,1.52,0.06,1.03,2.01,87.86,PHQ-9
+depression,all,27,1.56,0.07,1.03,2.1,88.57,BDI
+depression,all,956,1.6,0,1.51,1.69,89.29,CESD-10
+depression,all,74,1.64,0.03,1.31,1.98,90,BDI
+depression,all,16,1.68,0.17,0.86,2.5,90.71,PHQ-9
+depression,all,33,1.69,0.07,1.18,2.2,91.43,BDI
+depression,all,488,1.8,0,1.67,1.93,92.14,PHQ-9
+depression,all,27,1.83,0.09,1.24,2.42,92.86,PHQ-9
+depression,all,82,1.93,0.03,1.57,2.28,93.57,BDI
+depression,all,58,1.99,0.05,1.56,2.42,94.29,BDI
+depression,all,134,1.99,0.02,1.7,2.27,94.29,BDI
+depression,all,69,2.06,0.04,1.66,2.47,95.71,BDI
+depression,all,28,2.07,0.11,1.44,2.71,96.43,BDI
+depression,all,10,2.12,0.32,1.01,3.22,97.14,BSI (Depression)
+depression,all,38,2.14,0.08,1.58,2.7,97.86,BDI
+depression,all,95,2.27,0.04,1.89,2.64,98.57,BSI (Depression)
+depression,all,27,2.3,0.13,1.6,3,99.29,BDI
+depression,all,76,3.08,0.07,2.55,3.61,100,PHQ-9
+anxiety,all,17,-0.01,0.05,-0.44,0.41,1.19,BAI
+anxiety,all,34,0.12,0.02,-0.18,0.42,2.38,SCL (Anxiety)
+anxiety,all,41,0.22,0.02,-0.06,0.49,3.57,BAI
+anxiety,all,29,0.22,0.03,-0.11,0.55,3.57,PSWQ
+anxiety,all,111,0.24,0.01,0.07,0.41,5.95,DASS (Anxiety)
+anxiety,all,23,0.25,0.04,-0.13,0.62,7.14,SCL (Anxiety)
+anxiety,all,9,0.26,0.09,-0.34,0.86,8.33,BAI
+anxiety,all,17,0.27,0.05,-0.16,0.71,9.52,BAI
+anxiety,all,125,0.29,0.01,0.13,0.45,10.71,DASS (Anxiety)
+anxiety,all,5,0.3,0.17,-0.51,1.1,11.9,BAI
+anxiety,all,56,0.37,0.01,0.17,0.56,13.1,SAS
+anxiety,all,116,0.37,0.01,0.2,0.54,13.1,HADS (Anxiety)
+anxiety,all,116,0.38,0.01,0.21,0.55,15.48,HADS (Anxiety)
+anxiety,all,269,0.4,0,0.29,0.52,16.67,TOP  (Anxiety)
+anxiety,all,89,0.41,0.01,0.21,0.6,17.86,GHQ (Anxiety & Insomnia)
+anxiety,all,6,0.43,0.05,-0.03,0.88,19.05,GAD-7
+anxiety,all,65,0.44,0.01,0.21,0.67,20.24,BSI (Anxiety)
+anxiety,all,951,0.46,0,0.4,0.52,21.43,PSWQ
+anxiety,all,9895,0.46,0,0.44,0.48,21.43,CCAPS (Anxiety)
+anxiety,all,246,0.47,0.01,0.33,0.61,23.81,BAI
+anxiety,all,10,0.47,0.09,-0.12,1.06,23.81,GAD-7
+anxiety,all,720,0.48,0,0.41,0.55,26.19,HADS (Anxiety)
+anxiety,all,94,0.5,0.01,0.3,0.69,27.38,BSI (Anxiety)
+anxiety,all,423,0.54,0,0.45,0.63,28.57,BAI
+anxiety,all,4976,0.55,0,0.53,0.58,29.76,GAD-7
+anxiety,all,249,0.57,0,0.45,0.69,30.95,BAI
+anxiety,all,607,0.58,0,0.49,0.67,32.14,HADS (Anxiety)
+anxiety,all,19,0.59,0.05,0.14,1.03,33.33,GAD-7
+anxiety,all,45,0.59,0.02,0.29,0.9,33.33,SCL (Anxiety)
+anxiety,all,224,0.62,0,0.49,0.75,35.71,BSI (Anxiety)
+anxiety,all,24,0.65,0.05,0.22,1.08,36.9,GAD-7
+anxiety,all,38,0.67,0.04,0.26,1.08,38.1,DASS (Anxiety)
+anxiety,all,14,0.68,0.07,0.15,1.21,40.48,GAD-7
+anxiety,all,117,0.68,0.01,0.5,0.87,40.48,BAI
+anxiety,all,358,0.68,0,0.58,0.78,40.48,Burns AS
+anxiety,all,48,0.73,0.02,0.44,1.03,42.86,BAI
+anxiety,all,23,0.75,0.05,0.3,1.2,44.05,BSI (Anxiety)
+anxiety,all,19,0.75,0.08,0.21,1.29,44.05,GAD-7
+anxiety,all,28,0.76,0.04,0.37,1.15,46.43,GAD-7
+anxiety,all,263,0.77,0,0.65,0.9,47.62,Check
+anxiety,all,30,0.79,0.04,0.41,1.17,48.81,BSI (Anxiety)
+anxiety,all,10,0.8,0.11,0.15,1.46,50,GAD-7
+anxiety,all,37,0.82,0.03,0.48,1.16,51.19,BAI
+anxiety,all,93,0.86,0.02,0.59,1.14,52.38,GAD-7
+anxiety,all,93,0.87,0.01,0.65,1.09,54.76,SIAS-S
+anxiety,all,83,0.87,0.01,0.64,1.11,54.76,BAI
+anxiety,all,116,0.87,0.02,0.62,1.12,54.76,GAD-7
+anxiety,all,17,0.88,0.07,0.36,1.4,57.14,BSI (Anxiety)
+anxiety,all,21,0.89,0.08,0.35,1.43,58.33,BSI (Anxiety)
+anxiety,all,20,0.93,0.05,0.49,1.37,59.52,STAI
+anxiety,all,56,0.96,0.02,0.67,1.26,60.71,Burns AS
+anxiety,all,12,0.98,0.12,0.3,1.66,63.1,HADS (Anxiety)
+anxiety,all,105,0.98,0.01,0.78,1.18,63.1,SPS
+anxiety,all,546,0.98,0,0.88,1.07,63.1,BAI
+anxiety,all,56,0.99,0.02,0.69,1.28,65.48,SCL (Anxiety)
+anxiety,all,158,1,0.06,0.52,1.48,66.67,SCL (Anxiety)
+anxiety,all,330,1.02,0,0.89,1.14,67.86,BAI
+anxiety,all,53,1.02,0.02,0.71,1.33,67.86,PAI
+anxiety,all,94,1.04,0.02,0.8,1.29,70.24,BAI
+anxiety,all,93,1.04,0.01,0.8,1.27,70.24,PSWQ
+anxiety,all,245,1.05,0.01,0.91,1.2,72.62,GAD-7
+anxiety,all,399,1.06,0,0.93,1.19,73.81,BAI
+anxiety,all,15,1.08,0.09,0.48,1.67,75,BSQ
+anxiety,all,994,1.08,0,1.01,1.15,75,GAD-7
+anxiety,all,428,1.1,0,0.96,1.24,77.38,GAD-7
+anxiety,all,21,1.13,0.07,0.62,1.64,78.57,BSI (Anxiety)
+anxiety,all,20,1.14,0.07,0.61,1.66,79.76,HADS (Anxiety)
+anxiety,all,11,1.14,0.13,0.43,1.85,79.76,BAI
+anxiety,all,22,1.15,0.07,0.64,1.65,82.14,PAI
+anxiety,all,55,1.19,0.03,0.85,1.52,83.33,MMPI (Anxiety)
+anxiety,all,146,1.22,0.01,1.02,1.42,84.52,BAI
+anxiety,all,36,1.26,0.04,0.85,1.67,85.71,GAD-7
+anxiety,all,14,1.27,0.11,0.6,1.93,86.9,BAI
+anxiety,all,219,1.31,0.01,1.14,1.48,88.1,GAD-7
+anxiety,all,1089,1.38,0,1.27,1.49,89.29,GAD-7
+anxiety,all,50,1.67,0.04,1.26,2.08,90.48,ASC
+anxiety,all,163,1.74,0.01,1.51,1.98,91.67,GAD-7
+anxiety,all,8,1.76,0.29,0.7,2.83,92.86,SCL (Anxiety)
+anxiety,all,22,1.8,0.11,1.15,2.45,94.05,PSWQ
+anxiety,all,32,1.84,0.08,1.29,2.39,95.24,PSDD
+anxiety,all,27,1.97,0.1,1.34,2.59,96.43,GAD-7
+anxiety,all,17,2.03,0.17,1.23,2.84,97.62,PSWQ
+anxiety,all,76,2.1,0.04,1.71,2.49,98.81,HADS (Anxiety)
+anxiety,all,38,2.19,0.08,1.62,2.76,100,ASC
+general,all,4,-0.57,0.24,-1.54,0.39,0.54,Y-BOCS
+general,all,66,-0.04,0.01,-0.25,0.18,1.09,OQ-45
+general,all,13,0.09,0.06,-0.4,0.58,1.63,OQ-45
+general,all,16,0.11,0.05,-0.33,0.55,2.17,CORE-OM
+general,all,63,0.33,0.01,0.1,0.56,2.72,CORE-OM
+general,all,24,0.36,0.04,-0.01,0.73,3.8,PSQI
+general,all,37,0.36,0.02,0.06,0.66,3.8,PHQ-15
+general,all,4980,0.36,0,0.34,0.39,3.8,WSAS
+general,all,112,0.38,0.01,0.21,0.55,4.89,OQ-45
+general,all,47,0.38,0.04,-0.02,0.78,4.89,EDEQ
+general,all,81,0.39,0.01,0.18,0.59,5.98,CORE-OM
+general,all,34,0.39,0.03,0.08,0.71,5.98,Check
+general,all,164,0.41,0.01,0.21,0.61,7.07,OQ-45
+general,all,65,0.44,0.01,0.21,0.67,7.61,BSI-GSI
+general,all,213,0.44,0,0.31,0.57,7.61,OQ-45
+general,all,32,0.45,0.03,0.12,0.78,8.7,BEST
+general,all,56,0.45,0.01,0.23,0.67,8.7,SCL (Global)
+general,all,60,0.49,0.02,0.25,0.74,9.78,BSI-GSI
+general,all,25,0.49,0.04,0.12,0.87,9.78,SAS-SR
+general,all,243,0.51,0.01,0.35,0.67,10.87,BSI-GSI
+general,all,20,0.54,0.05,0.11,0.97,11.41,BSI-GSI
+general,all,59,0.54,0.02,0.3,0.78,11.41,SAS
+general,all,55,0.57,0.02,0.31,0.83,13.04,ISI
+general,all,23,0.57,0.04,0.17,0.97,13.04,SCL (Global)
+general,all,45,0.57,0.02,0.29,0.86,13.04,CORE-10
+general,all,23,0.58,0.04,0.2,0.96,14.13,BSI-GSI
+general,all,224,0.58,0,0.45,0.71,14.13,BSI-GSI
+general,all,89,0.59,0.01,0.38,0.79,15.22,GHQ
+general,all,32,0.59,0.03,0.25,0.93,15.22,OQ-45
+general,all,169,0.6,0.01,0.45,0.75,16.85,BHM
+general,all,992,0.6,0,0.52,0.67,16.85,BMM
+general,all,187,0.6,0.01,0.46,0.74,16.85,SCL
+general,all,110,0.61,0.01,0.42,0.79,17.93,CORE-OM
+general,all,78,0.61,0.02,0.31,0.91,17.93,EDI
+general,all,30,0.62,0.04,0.24,1,19.02,SCL (Global)
+general,all,13,0.63,0.08,0.08,1.17,20.11,OQ-45
+general,all,27,0.63,0.04,0.25,1,20.11,SCL (Global)
+general,all,216,0.63,0,0.5,0.76,20.11,BSI-GSI
+general,all,604,0.64,0,0.56,0.72,21.2,GHQ
+general,all,23,0.64,0.04,0.23,1.05,21.2,BSI-GSI
+general,all,4676,0.66,0,0.63,0.69,22.83,OQ-45
+general,all,60,0.66,0.02,0.4,0.91,22.83,BSI-GSI
+general,all,129,0.66,0.01,0.49,0.84,22.83,WSAS
+general,all,713,0.67,0,0.59,0.74,23.91,BHM
+general,all,112,0.67,0.01,0.48,0.86,23.91,SF-36
+general,all,30,0.68,0.03,0.31,1.04,25,BSI-GSI
+general,all,235,0.69,0,0.56,0.82,25.54,MHI-5
+general,all,118,0.71,0.01,0.52,0.89,26.63,CORE-OM
+general,all,199,0.71,0.01,0.57,0.85,26.63,OQ-45
+general,all,5176,0.71,0,0.68,0.74,26.63,ORS
+general,all,23,0.72,0.04,0.35,1.1,28.26,BSI-GSI
+general,all,94,0.72,0.01,0.51,0.92,28.26,BSI-GSI
+general,all,15,0.72,0.07,0.2,1.25,28.26,BSL
+general,all,108,0.72,0.01,0.53,0.92,28.26,EDEQ
+general,all,31,0.73,0.03,0.37,1.1,29.89,CORE-OM
+general,all,48,0.73,0.02,0.44,1.02,29.89,BSI-GSI
+general,all,5704,0.74,0,0.71,0.77,30.98,OQ-30
+general,all,125,0.75,0.01,0.56,0.93,32.07,EDEQ
+general,all,9,0.75,0.12,0.07,1.43,32.07,CORE-OM
+general,all,17,0.75,0.06,0.25,1.24,32.07,CORE-OM
+general,all,263,0.75,0,0.63,0.88,32.07,CORE 10
+general,all,403,0.76,0,0.65,0.86,33.7,BHM
+general,all,38,0.76,0.03,0.43,1.09,33.7,BSI-GSI
+general,all,75,0.77,0.01,0.53,1.01,34.78,SCL (Global)
+general,all,925,0.79,0,0.71,0.87,35.33,CORE-OM
+general,all,16145,0.81,0,0.79,0.83,35.87,CORE-OM
+general,all,33,0.82,0.03,0.46,1.19,36.96,BHM
+general,all,831,0.82,0,0.75,0.9,36.96,PSEQ
+general,all,21,0.82,0.07,0.29,1.34,36.96,BSI-GSI
+general,all,401,0.83,0,0.73,0.94,38.59,SCL (Global)
+general,all,31,0.83,0.04,0.46,1.21,38.59,CORE-OM
+general,all,135,0.83,0.01,0.65,1.02,38.59,CORE-OM
+general,all,78,0.84,0.01,0.6,1.08,39.67,OQ-45
+general,all,30,0.84,0.04,0.46,1.22,39.67,PCL
+general,all,362,0.85,0,0.74,0.96,40.76,SCL (Global)
+general,all,234,0.86,0,0.72,1,41.85,SCL (Global)
+general,all,45,0.86,0.03,0.54,1.17,41.85,CORE-OM
+general,all,58,0.86,0.02,0.57,1.15,41.85,OQ-45
+general,all,224,0.87,0.01,0.73,1.01,42.93,CORE-OM
+general,all,17,0.87,0.07,0.36,1.39,42.93,WSAS
+general,all,574,0.88,0,0.78,0.98,44.02,BSI-GSI
+general,all,25,0.89,0.05,0.46,1.31,44.57,BSI-GSI
+general,all,210,0.89,0.01,0.74,1.03,44.57,K10
+general,all,74,0.9,0.02,0.65,1.15,46.2,CORE-10
+general,all,254,0.9,0,0.77,1.04,46.2,SCL (Global)
+general,all,478,0.9,0,0.8,1,46.2,SCL (Global)
+general,all,412,0.91,0,0.8,1.01,47.28,SCL (Global)
+general,all,2151,0.92,0,0.87,0.97,47.83,CORE-OM
+general,all,62,0.92,0.02,0.65,1.2,47.83,CORE-OM
+general,all,951,0.93,0,0.86,1,49.46,SOS
+general,all,20,0.93,0.06,0.44,1.42,49.46,SCL (Global)
+general,all,48,0.93,0.03,0.61,1.24,49.46,OQ-45
+general,all,989,0.94,0,0.87,1,51.09,WSAS
+general,all,95,0.94,0.01,0.71,1.18,51.09,PCL
+general,all,6591,0.94,0,0.91,0.97,51.09,OQ-45
+general,all,206,0.95,0.01,0.78,1.12,52.17,PCL
+general,all,13,0.96,0.1,0.35,1.57,53.26,SF-36
+general,all,38,0.96,0.03,0.61,1.32,53.26,BSI-GSI
+general,all,262,0.96,0,0.83,1.1,53.26,MHI-5
+general,all,13,0.96,0.1,0.35,1.57,53.26,PCL
+general,all,58,0.97,0.03,0.63,1.31,54.89,CORE-OM
+general,all,58,0.98,0.02,0.69,1.27,55.43,BEST
+general,all,514,1,0,0.9,1.1,56.52,SCL (Global)
+general,all,245,1,0.01,0.86,1.15,56.52,WHO-DAS
+general,all,709,1,0,0.92,1.08,56.52,SCL (Global)
+general,all,12,1.02,0.11,0.37,1.67,57.61,CORE-OM
+general,all,27,1.03,0.05,0.59,1.46,58.15,BSI-GSI
+general,all,149,1.03,0.01,0.84,1.21,58.15,CORE-OM
+general,all,14,1.05,0.09,0.46,1.64,59.24,OCI
+general,all,17,1.06,0.08,0.5,1.61,59.78,PCL
+general,all,232,1.06,0.01,0.91,1.21,59.78,CORE-OM
+general,all,734,1.07,0,0.99,1.16,60.87,CORE-OM
+general,all,19,1.08,0.07,0.55,1.6,61.41,LSAS
+general,all,313,1.09,0,0.96,1.22,61.96,FEP
+general,all,50,1.1,0.03,0.77,1.43,62.5,BSI-GSI
+general,all,304,1.1,0,0.97,1.23,62.5,CA-COM (Distress)
+general,all,105,1.11,0.01,0.89,1.33,63.59,BSI-GSI
+general,all,88,1.11,0.02,0.86,1.36,63.59,PCL
+general,all,59,1.12,0.02,0.83,1.41,64.67,HADS
+general,all,125,1.13,0.01,0.93,1.33,65.22,HADS
+general,all,20,1.13,0.07,0.6,1.65,65.22,Y-BOCS
+general,all,442,1.14,0,1.02,1.25,66.3,SDS
+general,all,32,1.14,0.05,0.72,1.56,66.3,BSI-GSI
+general,all,17,1.15,0.09,0.58,1.73,67.39,PCL
+general,all,26,1.15,0.05,0.71,1.6,67.39,PCL
+general,all,158,1.16,0.01,0.98,1.34,68.48,SCL (Global)
+general,all,458,1.17,0,1.06,1.28,69.02,CORE-OM
+general,all,11,1.19,0.14,0.46,1.92,69.57,WSAS
+general,all,68,1.19,0.02,0.9,1.49,69.57,SCL (Global)
+general,all,37,1.2,0.04,0.82,1.58,70.65,YBOCS
+general,all,546,1.2,0,1.1,1.31,70.65,SCL (Global)
+general,all,3885,1.21,0,1.18,1.25,71.74,CORE-10
+general,all,16,1.22,0.14,0.49,1.94,72.28,REDS
+general,all,17,1.22,0.09,0.63,1.81,72.28,CORE-OM
+general,all,89,1.23,0.02,0.96,1.5,73.37,BSI-GSI
+general,all,10,1.23,0.16,0.46,2,73.37,BITE-SS
+general,all,697,1.24,0,1.15,1.33,74.46,CORE-OM
+general,all,305,1.24,0.01,1.1,1.38,74.46,CORE-OM
+general,all,6375,1.26,0,1.23,1.29,75.54,BHM
+general,all,53,1.27,0.03,0.93,1.61,76.63,CORE-OM
+general,all,96,1.27,0.02,1.02,1.53,76.63,SF-36
+general,all,51,1.27,0.03,0.92,1.61,76.63,Y-BOCS
+general,all,18,1.28,0.09,0.69,1.87,77.72,ZAN-BPD
+general,all,137,1.28,0.01,1.05,1.52,77.72,PCL
+general,all,41,1.29,0.04,0.9,1.68,78.8,CORE-OM
+general,all,63,1.29,0.03,0.97,1.6,78.8,CORE-OM
+general,all,44,1.33,0.04,0.96,1.7,79.89,EDEQ
+general,all,553,1.35,0,1.24,1.46,80.43,CORE-OM
+general,all,48,1.35,0.04,0.98,1.72,80.43,CORE-OM
+general,all,45,1.36,0.04,0.98,1.74,81.52,SCL (Global)
+general,all,667,1.36,0,1.26,1.46,81.52,CORE-OM
+general,all,14,1.37,0.13,0.65,2.09,82.61,SCL (Global)
+general,all,27,1.39,0.07,0.89,1.89,83.15,BSI-GSI
+general,all,17520,1.43,0,1.41,1.45,83.7,CORE-OM
+general,all,42,1.45,0.05,1.01,1.9,84.24,ORS
+general,all,191,1.46,0,1.35,1.57,84.78,OCI
+general,all,64,1.48,0.03,1.14,1.82,85.33,BSI-GSI
+general,all,108,1.49,0.02,1.23,1.75,85.87,CORE (10/OM)
+general,all,31,1.52,0.06,1.03,2.01,86.41,EDEQ
+general,all,323,1.55,0.01,1.4,1.7,86.96,CORE-OM
+general,all,232,1.57,0.01,1.39,1.75,87.5,PCL
+general,all,39,1.61,0.05,1.16,2.07,88.04,GHQ
+general,all,93,1.65,0.02,1.35,1.96,88.59,EDEQ
+general,all,36,1.7,0.06,1.21,2.2,89.13,SCL (Global)
+general,all,134,1.71,0.02,1.45,1.96,89.67,Y-BOCS
+general,all,37,1.75,0.06,1.26,2.24,90.22,GHQ
+general,all,8,1.76,0.29,0.7,2.82,90.76,SCL (Global)
+general,all,217,1.82,0.01,1.61,2.03,91.3,WSAS
+general,all,6,1.87,0.44,0.57,3.17,91.85,PCL
+general,all,330,1.88,0.01,1.71,2.05,92.39,PDS
+general,all,38,1.89,0.07,1.38,2.41,92.93,BSI-GSI
+general,all,26430,1.89,0,1.87,1.91,92.93,CORE-OM
+general,all,19,1.94,0.14,1.21,2.68,94.02,Y-BOCS
+general,all,19,1.98,0.15,1.23,2.73,94.57,YBOCS
+general,all,315,2.09,0.01,1.88,2.3,95.11,PSS
+general,all,10,2.14,0.31,1.05,3.23,95.65,Check
+general,all,74,2.15,0.04,1.74,2.55,96.2,WSAS
+general,all,405,2.25,0.01,2.07,2.43,96.74,ISI
+general,all,31,2.36,0.12,1.69,3.03,97.28,CORE-OM
+general,all,41,2.36,0.09,1.78,2.95,97.28,SCL (Global)
+general,all,23,2.43,0.16,1.64,3.22,98.37,Y-BOCS
+general,all,44,2.89,0.11,2.23,3.55,98.91,PCL
+general,all,132,3.07,0.04,2.67,3.47,99.46,Y-BOCS
+general,all,53,3.29,0.12,2.62,3.97,100,PSS
+depression,outpatient,6,-0.23,0.24,-1.19,0.74,0.83,PHQ-9
+depression,outpatient,85,0.08,0.01,-0.11,0.27,1.65,CESD-10
+depression,outpatient,29,0.13,0.03,-0.2,0.46,2.48,BDI
+depression,outpatient,9,0.16,0.09,-0.43,0.75,3.31,BDI
+depression,outpatient,112,0.29,0.01,0.12,0.46,4.13,BDI
+depression,outpatient,26,0.33,0.03,-0.02,0.69,4.96,PHQ-9
+depression,outpatient,111,0.34,0.01,0.16,0.51,5.79,DASS (Depression)
+depression,outpatient,14,0.37,0.06,-0.12,0.86,6.61,BDI
+depression,outpatient,37,0.38,0.02,0.08,0.68,7.44,BDI
+depression,outpatient,125,0.4,0.01,0.24,0.57,8.26,DASS (Depression)
+depression,outpatient,269,0.44,0,0.33,0.55,9.09,TOP (Depression)
+depression,outpatient,8,0.44,0.11,-0.22,1.09,9.09,SCL (Depression)
+depression,outpatient,24,0.46,0.05,0.02,0.89,10.74,PHQ-9
+depression,outpatient,10,0.47,0.09,-0.12,1.07,11.57,PHQ-9
+depression,outpatient,55,0.47,0.02,0.23,0.72,11.57,BDI
+depression,outpatient,26,0.48,0.01,0.27,0.69,13.22,PHQ-9
+depression,outpatient,45,0.5,0.03,0.17,0.83,14.05,SCL (Depression)
+depression,outpatient,116,0.51,0.01,0.34,0.69,14.88,HADS (Depression)
+depression,outpatient,4980,0.57,0,0.54,0.6,15.7,PHQ-9
+depression,outpatient,89,0.58,0.01,0.38,0.78,16.53,GHQ (Depression)
+depression,outpatient,607,0.58,0,0.49,0.67,16.53,HADS (Depression)
+depression,outpatient,19,0.59,0.05,0.15,1.04,19.01,PHQ-9
+depression,outpatient,13,0.59,0.08,0.06,1.13,19.01,BDI
+depression,outpatient,405,0.59,0,0.49,0.68,19.01,BDI
+depression,outpatient,23,0.6,0.04,0.19,1,20.66,SCL (Depression)
+depression,outpatient,19,0.6,0.09,0.02,1.19,20.66,PHQ-9
+depression,outpatient,88,0.61,0.02,0.34,0.88,22.31,BSI (Depression)
+depression,outpatient,30,0.62,0.03,0.26,0.97,23.14,BSI (Depression)
+depression,outpatient,9895,0.64,0,0.62,0.66,23.97,CCAPS (Depression)
+depression,outpatient,71,0.64,0.03,0.33,0.95,23.97,BDI
+depression,outpatient,32,0.66,0.03,0.31,1.01,25.62,BDI
+depression,outpatient,21,0.66,0.07,0.15,1.18,25.62,BSI (Depression)
+depression,outpatient,263,0.68,0,0.55,0.8,27.27,PHQ-9
+depression,outpatient,776,0.68,0,0.6,0.75,27.27,BDI
+depression,outpatient,334,0.7,0,0.59,0.81,28.93,BDI
+depression,outpatient,60,0.71,0.02,0.45,0.96,29.75,BDI
+depression,outpatient,28,0.72,0.04,0.34,1.1,30.58,PHQ-9
+depression,outpatient,410,0.72,0,0.63,0.8,30.58,BDI
+depression,outpatient,59,0.73,0.02,0.45,1.01,32.23,BDI
+depression,outpatient,546,0.74,0,0.66,0.83,33.06,BDI
+depression,outpatient,26,0.76,0.04,0.36,1.16,33.88,BDI
+depression,outpatient,14,0.81,0.08,0.25,1.36,34.71,PHQ-9
+depression,outpatient,38,0.82,0.05,0.4,1.23,36.36,DASS (Depression)
+depression,outpatient,246,0.82,0.01,0.66,0.98,36.36,BDI
+depression,outpatient,30,0.82,0.04,0.44,1.2,36.36,PHQ-9
+depression,outpatient,28,0.85,0.04,0.45,1.25,38.02,BDI
+depression,outpatient,170,0.85,0.01,0.62,1.08,38.02,BDI
+depression,outpatient,206,0.86,0.01,0.7,1.01,39.67,BSI (Depression)
+depression,outpatient,453,0.87,0,0.77,0.97,40.5,BDI
+depression,outpatient,62,0.88,0.02,0.61,1.16,41.32,BDI
+depression,outpatient,193,0.88,0.01,0.73,1.04,41.32,BDI
+depression,outpatient,12,0.89,0.1,0.27,1.51,42.98,CESD-10
+depression,outpatient,32,0.9,0.04,0.52,1.28,44.63,BDI
+depression,outpatient,50,0.9,0.02,0.59,1.2,44.63,BDI
+depression,outpatient,342,0.9,0,0.78,1.02,44.63,BDI
+depression,outpatient,93,0.91,0.01,0.67,1.14,46.28,PHQ-9
+depression,outpatient,400,0.92,0,0.81,1.03,47.11,BDI
+depression,outpatient,232,0.92,0.01,0.78,1.06,47.11,PHQ-9
+depression,outpatient,60,0.93,0.02,0.65,1.21,49.59,BDI
+depression,outpatient,48,0.93,0.03,0.61,1.24,49.59,BDI
+depression,outpatient,11,0.93,0.11,0.28,1.59,49.59,BDI
+depression,outpatient,23595,0.94,0,0.92,0.95,51.24,PHQ-9
+depression,outpatient,249,0.95,0.01,0.81,1.09,52.07,BDI
+depression,outpatient,9648,0.95,0,0.92,0.97,52.07,PHQ-9
+depression,outpatient,46,0.96,0.01,0.8,1.12,53.72,BDI
+depression,outpatient,330,0.97,0,0.85,1.09,54.55,BDI
+depression,outpatient,20,0.99,0.06,0.49,1.48,55.37,HADS (Depression)
+depression,outpatient,23,0.99,0.06,0.53,1.46,55.37,BDI
+depression,outpatient,83,1,0.01,0.76,1.24,57.02,BDI
+depression,outpatient,105,1.01,0.03,0.65,1.37,57.85,BDI
+depression,outpatient,981,1.01,0,0.94,1.09,57.85,BDI
+depression,outpatient,85,1.03,0.02,0.78,1.27,60.33,BDI
+depression,outpatient,19,1.03,0.07,0.51,1.55,60.33,PHQ-9
+depression,outpatient,78,1.03,0.01,0.79,1.26,60.33,BDI
+depression,outpatient,116,1.03,0.02,0.78,1.28,60.33,PHQ-9
+depression,outpatient,55,1.05,0.03,0.73,1.37,62.81,MMPI (Depression)
+depression,outpatient,21,1.05,0.06,0.55,1.55,62.81,BDI
+depression,outpatient,137,1.06,0.01,0.83,1.29,65.29,BSI (Depression)
+depression,outpatient,217,1.06,0.01,0.9,1.21,65.29,BDI
+depression,outpatient,7,1.06,0.19,0.2,1.92,65.29,BDI
+depression,outpatient,47,1.09,0.04,0.72,1.46,66.94,PHQ-9
+depression,outpatient,56,1.1,0.03,0.79,1.41,67.77,SCL (Depression)
+depression,outpatient,101,1.12,0.02,0.88,1.37,69.42,BDI
+depression,outpatient,25,1.12,0.06,0.65,1.59,69.42,BDI
+depression,outpatient,119,1.12,0.01,0.9,1.33,69.42,BDI
+depression,outpatient,12,1.13,0.12,0.44,1.81,71.07,HADS (Depression)
+depression,outpatient,25,1.15,0.06,0.68,1.63,71.9,BDI
+depression,outpatient,429,1.16,0,1.02,1.29,72.73,PHQ-9
+depression,outpatient,219,1.19,0.01,1.03,1.35,73.55,PHQ-9
+depression,outpatient,40,1.2,0.04,0.81,1.58,74.38,BDI
+depression,outpatient,36,1.22,0.04,0.82,1.63,75.21,PHQ-9
+depression,outpatient,17,1.24,0.09,0.64,1.83,76.03,BDI
+depression,outpatient,38,1.24,0.04,0.84,1.63,76.03,BDI
+depression,outpatient,20,1.25,0.08,0.7,1.81,77.69,SCL (Depression)
+depression,outpatient,51,1.25,0.04,0.87,1.64,77.69,BDI
+depression,outpatient,6,1.28,0.29,0.22,2.34,79.34,BDI
+depression,outpatient,163,1.29,0.01,1.09,1.48,80.17,PHQ-9
+depression,outpatient,20,1.34,0.08,0.79,1.89,80.99,BDI
+depression,outpatient,70,1.38,0.03,1.07,1.69,81.82,BDI
+depression,outpatient,38,1.4,0.05,0.98,1.82,82.64,BDI
+depression,outpatient,24,1.41,0.07,0.87,1.94,83.47,BDI
+depression,outpatient,160,1.41,0.01,1.2,1.62,83.47,BDI
+depression,outpatient,338,1.42,0.01,1.28,1.56,85.12,BDI
+depression,outpatient,38,1.46,0.05,1.02,1.89,85.95,BDI
+depression,outpatient,14,1.49,0.14,0.76,2.21,86.78,BDI
+depression,outpatient,31,1.52,0.06,1.03,2.01,87.6,PHQ-9
+depression,outpatient,27,1.56,0.07,1.03,2.1,88.43,BDI
+depression,outpatient,74,1.64,0.03,1.31,1.98,89.26,BDI
+depression,outpatient,16,1.68,0.17,0.86,2.5,90.08,PHQ-9
+depression,outpatient,33,1.69,0.07,1.18,2.2,90.91,BDI
+depression,outpatient,488,1.8,0,1.67,1.93,91.74,PHQ-9
+depression,outpatient,27,1.83,0.09,1.24,2.42,92.56,PHQ-9
+depression,outpatient,82,1.93,0.03,1.57,2.28,93.39,BDI
+depression,outpatient,58,1.99,0.05,1.56,2.42,94.21,BDI
+depression,outpatient,69,2.06,0.04,1.66,2.47,95.04,BDI
+depression,outpatient,28,2.07,0.11,1.44,2.71,95.87,BDI
+depression,outpatient,10,2.12,0.32,1.01,3.22,96.69,BSI (Depression)
+depression,outpatient,38,2.14,0.08,1.58,2.7,97.52,BDI
+depression,outpatient,95,2.27,0.04,1.89,2.64,98.35,BSI (Depression)
+depression,outpatient,27,2.3,0.13,1.6,3,99.17,BDI
+depression,outpatient,76,3.08,0.07,2.55,3.61,100,PHQ-9
+anxiety,outpatient,41,0.22,0.02,-0.06,0.49,1.33,BAI
+anxiety,outpatient,29,0.22,0.03,-0.11,0.55,1.33,PSWQ
+anxiety,outpatient,111,0.24,0.01,0.07,0.41,4,DASS (Anxiety)
+anxiety,outpatient,23,0.25,0.04,-0.13,0.62,5.33,SCL (Anxiety)
+anxiety,outpatient,9,0.26,0.09,-0.34,0.86,6.67,BAI
+anxiety,outpatient,125,0.29,0.01,0.13,0.45,8,DASS (Anxiety)
+anxiety,outpatient,5,0.3,0.17,-0.51,1.1,9.33,BAI
+anxiety,outpatient,56,0.37,0.01,0.17,0.56,10.67,SAS
+anxiety,outpatient,116,0.37,0.01,0.2,0.54,10.67,HADS (Anxiety)
+anxiety,outpatient,116,0.38,0.01,0.21,0.55,13.33,HADS (Anxiety)
+anxiety,outpatient,269,0.4,0,0.29,0.52,14.67,TOP  (Anxiety)
+anxiety,outpatient,89,0.41,0.01,0.21,0.6,16,GHQ (Anxiety & Insomnia)
+anxiety,outpatient,6,0.43,0.05,-0.03,0.88,17.33,GAD-7
+anxiety,outpatient,65,0.44,0.01,0.21,0.67,18.67,BSI (Anxiety)
+anxiety,outpatient,9895,0.46,0,0.44,0.48,20,CCAPS (Anxiety)
+anxiety,outpatient,246,0.47,0.01,0.33,0.61,21.33,BAI
+anxiety,outpatient,10,0.47,0.09,-0.12,1.06,21.33,GAD-7
+anxiety,outpatient,94,0.5,0.01,0.3,0.69,24,BSI (Anxiety)
+anxiety,outpatient,423,0.54,0,0.45,0.63,25.33,BAI
+anxiety,outpatient,4976,0.55,0,0.53,0.58,26.67,GAD-7
+anxiety,outpatient,249,0.57,0,0.45,0.69,28,BAI
+anxiety,outpatient,607,0.58,0,0.49,0.67,29.33,HADS (Anxiety)
+anxiety,outpatient,19,0.59,0.05,0.14,1.03,30.67,GAD-7
+anxiety,outpatient,45,0.59,0.02,0.29,0.9,30.67,SCL (Anxiety)
+anxiety,outpatient,224,0.62,0,0.49,0.75,33.33,BSI (Anxiety)
+anxiety,outpatient,24,0.65,0.05,0.22,1.08,34.67,GAD-7
+anxiety,outpatient,38,0.67,0.04,0.26,1.08,36,DASS (Anxiety)
+anxiety,outpatient,14,0.68,0.07,0.15,1.21,38.67,GAD-7
+anxiety,outpatient,117,0.68,0.01,0.5,0.87,38.67,BAI
+anxiety,outpatient,358,0.68,0,0.58,0.78,38.67,Burns AS
+anxiety,outpatient,48,0.73,0.02,0.44,1.03,41.33,BAI
+anxiety,outpatient,19,0.75,0.08,0.21,1.29,42.67,GAD-7
+anxiety,outpatient,28,0.76,0.04,0.37,1.15,44,GAD-7
+anxiety,outpatient,263,0.77,0,0.65,0.9,45.33,Check
+anxiety,outpatient,30,0.79,0.04,0.41,1.17,46.67,BSI (Anxiety)
+anxiety,outpatient,10,0.8,0.11,0.15,1.46,48,GAD-7
+anxiety,outpatient,37,0.82,0.03,0.48,1.16,49.33,BAI
+anxiety,outpatient,93,0.86,0.02,0.59,1.14,50.67,GAD-7
+anxiety,outpatient,93,0.87,0.01,0.65,1.09,53.33,SIAS-S
+anxiety,outpatient,83,0.87,0.01,0.64,1.11,53.33,BAI
+anxiety,outpatient,116,0.87,0.02,0.62,1.12,53.33,GAD-7
+anxiety,outpatient,17,0.88,0.07,0.36,1.4,56,BSI (Anxiety)
+anxiety,outpatient,21,0.89,0.08,0.35,1.43,57.33,BSI (Anxiety)
+anxiety,outpatient,20,0.93,0.05,0.49,1.37,58.67,STAI
+anxiety,outpatient,56,0.96,0.02,0.67,1.26,60,Burns AS
+anxiety,outpatient,12,0.98,0.12,0.3,1.66,62.67,HADS (Anxiety)
+anxiety,outpatient,105,0.98,0.01,0.78,1.18,62.67,SPS
+anxiety,outpatient,546,0.98,0,0.88,1.07,62.67,BAI
+anxiety,outpatient,56,0.99,0.02,0.69,1.28,65.33,SCL (Anxiety)
+anxiety,outpatient,330,1.02,0,0.89,1.14,66.67,BAI
+anxiety,outpatient,53,1.02,0.02,0.71,1.33,66.67,PAI
+anxiety,outpatient,94,1.04,0.02,0.8,1.29,69.33,BAI
+anxiety,outpatient,93,1.04,0.01,0.8,1.27,69.33,PSWQ
+anxiety,outpatient,399,1.06,0,0.93,1.19,72,BAI
+anxiety,outpatient,15,1.08,0.09,0.48,1.67,73.33,BSQ
+anxiety,outpatient,428,1.1,0,0.96,1.24,74.67,GAD-7
+anxiety,outpatient,21,1.13,0.07,0.62,1.64,76,BSI (Anxiety)
+anxiety,outpatient,20,1.14,0.07,0.61,1.66,77.33,HADS (Anxiety)
+anxiety,outpatient,11,1.14,0.13,0.43,1.85,77.33,BAI
+anxiety,outpatient,22,1.15,0.07,0.64,1.65,80,PAI
+anxiety,outpatient,55,1.19,0.03,0.85,1.52,81.33,MMPI (Anxiety)
+anxiety,outpatient,146,1.22,0.01,1.02,1.42,82.67,BAI
+anxiety,outpatient,36,1.26,0.04,0.85,1.67,84,GAD-7
+anxiety,outpatient,14,1.27,0.11,0.6,1.93,85.33,BAI
+anxiety,outpatient,219,1.31,0.01,1.14,1.48,86.67,GAD-7
+anxiety,outpatient,1089,1.38,0,1.27,1.49,88,GAD-7
+anxiety,outpatient,50,1.67,0.04,1.26,2.08,89.33,ASC
+anxiety,outpatient,163,1.74,0.01,1.51,1.98,90.67,GAD-7
+anxiety,outpatient,8,1.76,0.29,0.7,2.83,92,SCL (Anxiety)
+anxiety,outpatient,22,1.8,0.11,1.15,2.45,93.33,PSWQ
+anxiety,outpatient,32,1.84,0.08,1.29,2.39,94.67,PSDD
+anxiety,outpatient,27,1.97,0.1,1.34,2.59,96,GAD-7
+anxiety,outpatient,17,2.03,0.17,1.23,2.84,97.33,PSWQ
+anxiety,outpatient,76,2.1,0.04,1.71,2.49,98.67,HADS (Anxiety)
+anxiety,outpatient,38,2.19,0.08,1.62,2.76,100,ASC
+general,outpatient,4,-0.57,0.24,-1.54,0.39,0.65,Y-BOCS
+general,outpatient,66,-0.04,0.01,-0.25,0.18,1.31,OQ-45
+general,outpatient,13,0.09,0.06,-0.4,0.58,1.96,OQ-45
+general,outpatient,16,0.11,0.05,-0.33,0.55,2.61,CORE-OM
+general,outpatient,63,0.33,0.01,0.1,0.56,3.27,CORE-OM
+general,outpatient,24,0.36,0.04,-0.01,0.73,4.58,PSQI
+general,outpatient,37,0.36,0.02,0.06,0.66,4.58,PHQ-15
+general,outpatient,4980,0.36,0,0.34,0.39,4.58,WSAS
+general,outpatient,112,0.38,0.01,0.21,0.55,5.88,OQ-45
+general,outpatient,47,0.38,0.04,-0.02,0.78,5.88,EDEQ
+general,outpatient,81,0.39,0.01,0.18,0.59,7.19,CORE-OM
+general,outpatient,164,0.41,0.01,0.21,0.61,7.84,OQ-45
+general,outpatient,65,0.44,0.01,0.21,0.67,8.5,BSI-GSI
+general,outpatient,213,0.44,0,0.31,0.57,8.5,OQ-45
+general,outpatient,60,0.49,0.02,0.25,0.74,9.8,BSI-GSI
+general,outpatient,25,0.49,0.04,0.12,0.87,9.8,SAS-SR
+general,outpatient,243,0.51,0.01,0.35,0.67,11.11,BSI-GSI
+general,outpatient,20,0.54,0.05,0.11,0.97,11.76,BSI-GSI
+general,outpatient,59,0.54,0.02,0.3,0.78,11.76,SAS
+general,outpatient,55,0.57,0.02,0.31,0.83,13.73,ISI
+general,outpatient,23,0.57,0.04,0.17,0.97,13.73,SCL (Global)
+general,outpatient,45,0.57,0.02,0.29,0.86,13.73,CORE-10
+general,outpatient,23,0.58,0.04,0.2,0.96,15.03,BSI-GSI
+general,outpatient,224,0.58,0,0.45,0.71,15.03,BSI-GSI
+general,outpatient,89,0.59,0.01,0.38,0.79,16.34,GHQ
+general,outpatient,32,0.59,0.03,0.25,0.93,16.34,OQ-45
+general,outpatient,169,0.6,0.01,0.45,0.75,17.65,BHM
+general,outpatient,187,0.6,0.01,0.46,0.74,17.65,SCL
+general,outpatient,110,0.61,0.01,0.42,0.79,18.95,CORE-OM
+general,outpatient,78,0.61,0.02,0.31,0.91,18.95,EDI
+general,outpatient,30,0.62,0.04,0.24,1,20.26,SCL (Global)
+general,outpatient,13,0.63,0.08,0.08,1.17,21.57,OQ-45
+general,outpatient,27,0.63,0.04,0.25,1,21.57,SCL (Global)
+general,outpatient,216,0.63,0,0.5,0.76,21.57,BSI-GSI
+general,outpatient,604,0.64,0,0.56,0.72,22.88,GHQ
+general,outpatient,23,0.64,0.04,0.23,1.05,22.88,BSI-GSI
+general,outpatient,4676,0.66,0,0.63,0.69,24.84,OQ-45
+general,outpatient,60,0.66,0.02,0.4,0.91,24.84,BSI-GSI
+general,outpatient,129,0.66,0.01,0.49,0.84,24.84,WSAS
+general,outpatient,713,0.67,0,0.59,0.74,26.14,BHM
+general,outpatient,112,0.67,0.01,0.48,0.86,26.14,SF-36
+general,outpatient,30,0.68,0.03,0.31,1.04,27.45,BSI-GSI
+general,outpatient,235,0.69,0,0.56,0.82,28.1,MHI-5
+general,outpatient,118,0.71,0.01,0.52,0.89,29.41,CORE-OM
+general,outpatient,199,0.71,0.01,0.57,0.85,29.41,OQ-45
+general,outpatient,5176,0.71,0,0.68,0.74,29.41,ORS
+general,outpatient,94,0.72,0.01,0.51,0.92,30.72,BSI-GSI
+general,outpatient,108,0.72,0.01,0.53,0.92,30.72,EDEQ
+general,outpatient,31,0.73,0.03,0.37,1.1,32.03,CORE-OM
+general,outpatient,48,0.73,0.02,0.44,1.02,32.03,BSI-GSI
+general,outpatient,5704,0.74,0,0.71,0.77,33.33,OQ-30
+general,outpatient,125,0.75,0.01,0.56,0.93,34.64,EDEQ
+general,outpatient,9,0.75,0.12,0.07,1.43,34.64,CORE-OM
+general,outpatient,263,0.75,0,0.63,0.88,34.64,CORE 10
+general,outpatient,403,0.76,0,0.65,0.86,35.95,BHM
+general,outpatient,38,0.76,0.03,0.43,1.09,35.95,BSI-GSI
+general,outpatient,75,0.77,0.01,0.53,1.01,37.25,SCL (Global)
+general,outpatient,925,0.79,0,0.71,0.87,37.91,CORE-OM
+general,outpatient,16145,0.81,0,0.79,0.83,38.56,CORE-OM
+general,outpatient,33,0.82,0.03,0.46,1.19,39.22,BHM
+general,outpatient,21,0.82,0.07,0.29,1.34,39.22,BSI-GSI
+general,outpatient,401,0.83,0,0.73,0.94,41.18,SCL (Global)
+general,outpatient,31,0.83,0.04,0.46,1.21,41.18,CORE-OM
+general,outpatient,135,0.83,0.01,0.65,1.02,41.18,CORE-OM
+general,outpatient,78,0.84,0.01,0.6,1.08,42.48,OQ-45
+general,outpatient,30,0.84,0.04,0.46,1.22,42.48,PCL
+general,outpatient,362,0.85,0,0.74,0.96,43.79,SCL (Global)
+general,outpatient,45,0.86,0.03,0.54,1.17,44.44,CORE-OM
+general,outpatient,58,0.86,0.02,0.57,1.15,44.44,OQ-45
+general,outpatient,224,0.87,0.01,0.73,1.01,45.75,CORE-OM
+general,outpatient,17,0.87,0.07,0.36,1.39,45.75,WSAS
+general,outpatient,574,0.88,0,0.78,0.98,47.06,BSI-GSI
+general,outpatient,25,0.89,0.05,0.46,1.31,47.71,BSI-GSI
+general,outpatient,210,0.89,0.01,0.74,1.03,47.71,K10
+general,outpatient,74,0.9,0.02,0.65,1.15,49.02,CORE-10
+general,outpatient,412,0.91,0,0.8,1.01,49.67,SCL (Global)
+general,outpatient,2151,0.92,0,0.87,0.97,50.33,CORE-OM
+general,outpatient,62,0.92,0.02,0.65,1.2,50.33,CORE-OM
+general,outpatient,20,0.93,0.06,0.44,1.42,51.63,SCL (Global)
+general,outpatient,48,0.93,0.03,0.61,1.24,51.63,OQ-45
+general,outpatient,989,0.94,0,0.87,1,53.59,WSAS
+general,outpatient,95,0.94,0.01,0.71,1.18,53.59,PCL
+general,outpatient,6591,0.94,0,0.91,0.97,53.59,OQ-45
+general,outpatient,206,0.95,0.01,0.78,1.12,54.9,PCL
+general,outpatient,13,0.96,0.1,0.35,1.57,56.21,SF-36
+general,outpatient,38,0.96,0.03,0.61,1.32,56.21,BSI-GSI
+general,outpatient,262,0.96,0,0.83,1.1,56.21,MHI-5
+general,outpatient,13,0.96,0.1,0.35,1.57,56.21,PCL
+general,outpatient,58,0.97,0.03,0.63,1.31,58.17,CORE-OM
+general,outpatient,12,1.02,0.11,0.37,1.67,58.82,CORE-OM
+general,outpatient,27,1.03,0.05,0.59,1.46,59.48,BSI-GSI
+general,outpatient,149,1.03,0.01,0.84,1.21,59.48,CORE-OM
+general,outpatient,14,1.05,0.09,0.46,1.64,60.78,OCI
+general,outpatient,232,1.06,0.01,0.91,1.21,61.44,CORE-OM
+general,outpatient,734,1.07,0,0.99,1.16,62.09,CORE-OM
+general,outpatient,19,1.08,0.07,0.55,1.6,62.75,LSAS
+general,outpatient,313,1.09,0,0.96,1.22,63.4,FEP
+general,outpatient,50,1.1,0.03,0.77,1.43,64.05,BSI-GSI
+general,outpatient,304,1.1,0,0.97,1.23,64.05,CA-COM (Distress)
+general,outpatient,105,1.11,0.01,0.89,1.33,65.36,BSI-GSI
+general,outpatient,88,1.11,0.02,0.86,1.36,65.36,PCL
+general,outpatient,59,1.12,0.02,0.83,1.41,66.67,HADS
+general,outpatient,125,1.13,0.01,0.93,1.33,67.32,HADS
+general,outpatient,20,1.13,0.07,0.6,1.65,67.32,Y-BOCS
+general,outpatient,442,1.14,0,1.02,1.25,68.63,SDS
+general,outpatient,32,1.14,0.05,0.72,1.56,68.63,BSI-GSI
+general,outpatient,26,1.15,0.05,0.71,1.6,69.93,PCL
+general,outpatient,458,1.17,0,1.06,1.28,70.59,CORE-OM
+general,outpatient,11,1.19,0.14,0.46,1.92,71.24,WSAS
+general,outpatient,68,1.19,0.02,0.9,1.49,71.24,SCL (Global)
+general,outpatient,37,1.2,0.04,0.82,1.58,72.55,YBOCS
+general,outpatient,3885,1.21,0,1.18,1.25,73.2,CORE-10
+general,outpatient,16,1.22,0.14,0.49,1.94,73.86,REDS
+general,outpatient,17,1.22,0.09,0.63,1.81,73.86,CORE-OM
+general,outpatient,89,1.23,0.02,0.96,1.5,75.16,BSI-GSI
+general,outpatient,10,1.23,0.16,0.46,2,75.16,BITE-SS
+general,outpatient,697,1.24,0,1.15,1.33,76.47,CORE-OM
+general,outpatient,305,1.24,0.01,1.1,1.38,76.47,CORE-OM
+general,outpatient,6375,1.26,0,1.23,1.29,77.78,BHM
+general,outpatient,53,1.27,0.03,0.93,1.61,78.43,CORE-OM
+general,outpatient,96,1.27,0.02,1.02,1.53,78.43,SF-36
+general,outpatient,137,1.28,0.01,1.05,1.52,79.74,PCL
+general,outpatient,41,1.29,0.04,0.9,1.68,80.39,CORE-OM
+general,outpatient,63,1.29,0.03,0.97,1.6,80.39,CORE-OM
+general,outpatient,553,1.35,0,1.24,1.46,81.7,CORE-OM
+general,outpatient,48,1.35,0.04,0.98,1.72,81.7,CORE-OM
+general,outpatient,667,1.36,0,1.26,1.46,83.01,CORE-OM
+general,outpatient,27,1.39,0.07,0.89,1.89,83.66,BSI-GSI
+general,outpatient,17520,1.43,0,1.41,1.45,84.31,CORE-OM
+general,outpatient,42,1.45,0.05,1.01,1.9,84.97,ORS
+general,outpatient,191,1.46,0,1.35,1.57,85.62,OCI
+general,outpatient,108,1.49,0.02,1.23,1.75,86.27,CORE (10/OM)
+general,outpatient,31,1.52,0.06,1.03,2.01,86.93,EDEQ
+general,outpatient,323,1.55,0.01,1.4,1.7,87.58,CORE-OM
+general,outpatient,232,1.57,0.01,1.39,1.75,88.24,PCL
+general,outpatient,39,1.61,0.05,1.16,2.07,88.89,GHQ
+general,outpatient,93,1.65,0.02,1.35,1.96,89.54,EDEQ
+general,outpatient,37,1.75,0.06,1.26,2.24,90.2,GHQ
+general,outpatient,8,1.76,0.29,0.7,2.82,90.85,SCL (Global)
+general,outpatient,217,1.82,0.01,1.61,2.03,91.5,WSAS
+general,outpatient,6,1.87,0.44,0.57,3.17,92.16,PCL
+general,outpatient,330,1.88,0.01,1.71,2.05,92.81,PDS
+general,outpatient,38,1.89,0.07,1.38,2.41,93.46,BSI-GSI
+general,outpatient,26430,1.89,0,1.87,1.91,93.46,CORE-OM
+general,outpatient,19,1.94,0.14,1.21,2.68,94.77,Y-BOCS
+general,outpatient,19,1.98,0.15,1.23,2.73,95.42,YBOCS
+general,outpatient,10,2.14,0.31,1.05,3.23,96.08,Check
+general,outpatient,74,2.15,0.04,1.74,2.55,96.73,WSAS
+general,outpatient,405,2.25,0.01,2.07,2.43,97.39,ISI
+general,outpatient,31,2.36,0.12,1.69,3.03,98.04,CORE-OM
+general,outpatient,23,2.43,0.16,1.64,3.22,98.69,Y-BOCS
+general,outpatient,132,3.07,0.04,2.67,3.47,99.35,Y-BOCS
+general,outpatient,53,3.29,0.12,2.62,3.97,100,PSS
+depression,inpatient,34,0.22,0.02,-0.08,0.53,6.25,BDI
+depression,inpatient,17,0.38,0.05,-0.06,0.83,12.5,BDI
+depression,inpatient,17,0.47,0.05,0.01,0.92,18.75,BDI
+depression,inpatient,56,0.47,0.01,0.24,0.7,18.75,BDI
+depression,inpatient,833,0.63,0,0.56,0.69,31.25,BDI
+depression,inpatient,23,0.7,0.05,0.29,1.12,37.5,BSI (Depression)
+depression,inpatient,10,0.7,0.1,0.07,1.34,37.5,BDI
+depression,inpatient,951,1.08,0,1.01,1.16,50,CESD-10
+depression,inpatient,234,1.12,0.01,0.96,1.27,56.25,SCL (Depression)
+depression,inpatient,994,1.17,0,1.1,1.25,62.5,PHQ-9
+depression,inpatient,45,1.19,0.03,0.83,1.55,68.75,BDI
+depression,inpatient,245,1.19,0.01,1.04,1.35,68.75,PHQ-9
+depression,inpatient,514,1.2,0,1.09,1.31,81.25,SCL (Depression)
+depression,inpatient,158,1.22,0.01,1.02,1.42,87.5,SCL (Depression)
+depression,inpatient,1084,1.33,0,1.24,1.42,93.75,BDI
+depression,inpatient,956,1.6,0,1.51,1.69,100,CESD-10
+anxiety,inpatient,17,-0.01,0.05,-0.44,0.41,11.11,BAI
+anxiety,inpatient,34,0.12,0.02,-0.18,0.42,22.22,SCL (Anxiety)
+anxiety,inpatient,17,0.27,0.05,-0.16,0.71,33.33,BAI
+anxiety,inpatient,951,0.46,0,0.4,0.52,44.44,PSWQ
+anxiety,inpatient,720,0.48,0,0.41,0.55,55.56,HADS (Anxiety)
+anxiety,inpatient,23,0.75,0.05,0.3,1.2,66.67,BSI (Anxiety)
+anxiety,inpatient,158,1,0.06,0.52,1.48,77.78,SCL (Anxiety)
+anxiety,inpatient,245,1.05,0.01,0.91,1.2,88.89,GAD-7
+anxiety,inpatient,994,1.08,0,1.01,1.15,100,GAD-7
+general,inpatient,34,0.39,0.03,0.08,0.71,3.57,Check
+general,inpatient,32,0.45,0.03,0.12,0.78,7.14,BEST
+general,inpatient,56,0.45,0.01,0.23,0.67,7.14,SCL (Global)
+general,inpatient,992,0.6,0,0.52,0.67,14.29,BMM
+general,inpatient,23,0.72,0.04,0.35,1.1,17.86,BSI-GSI
+general,inpatient,15,0.72,0.07,0.2,1.25,17.86,BSL
+general,inpatient,17,0.75,0.06,0.25,1.24,25,CORE-OM
+general,inpatient,831,0.82,0,0.75,0.9,28.57,PSEQ
+general,inpatient,234,0.86,0,0.72,1,32.14,SCL (Global)
+general,inpatient,254,0.9,0,0.77,1.04,35.71,SCL (Global)
+general,inpatient,951,0.93,0,0.86,1,39.29,SOS
+general,inpatient,58,0.98,0.02,0.69,1.27,42.86,BEST
+general,inpatient,514,1,0,0.9,1.1,50,SCL (Global)
+general,inpatient,245,1,0.01,0.86,1.15,50,WHO-DAS
+general,inpatient,709,1,0,0.92,1.08,50,SCL (Global)
+general,inpatient,17,1.06,0.08,0.5,1.61,57.14,PCL
+general,inpatient,17,1.15,0.09,0.58,1.73,60.71,PCL
+general,inpatient,158,1.16,0.01,0.98,1.34,64.29,SCL (Global)
+general,inpatient,546,1.2,0,1.1,1.31,67.86,SCL (Global)
+general,inpatient,51,1.27,0.03,0.92,1.61,71.43,Y-BOCS
+general,inpatient,18,1.28,0.09,0.69,1.87,75,ZAN-BPD
+general,inpatient,44,1.33,0.04,0.96,1.7,78.57,EDEQ
+general,inpatient,45,1.36,0.04,0.98,1.74,82.14,SCL (Global)
+general,inpatient,14,1.37,0.13,0.65,2.09,85.71,SCL (Global)
+general,inpatient,64,1.48,0.03,1.14,1.82,89.29,BSI-GSI
+general,inpatient,36,1.7,0.06,1.21,2.2,92.86,SCL (Global)
+general,inpatient,315,2.09,0.01,1.88,2.3,96.43,PSS
+general,inpatient,41,2.36,0.09,1.78,2.95,100,SCL (Global)

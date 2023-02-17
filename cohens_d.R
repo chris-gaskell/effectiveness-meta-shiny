@@ -42,11 +42,74 @@ ci.ub <-
 
 d.lookup <- format(d.adjusted, nsmall = 2)
 
-lookup.tab <- lookup %>%
- mutate(es = format(es, nsmall = 2)) %>%
+# lookup.tab <- lookup %>%
+#  mutate(es = format(es, nsmall = 2)) %>%
+#   arrange(es) %>%
+#   mutate(es = stringr::str_replace(es, fixed(" "), "")) %>%
+#   distinct()
+#
+
+setting <- "outpatient"
+group <- "other"
+
+norm.datasets %>%
+  filter(setting == "outpatient" & group == "other") %>%
+  mutate(reference = "benchmarks") %>%
+  add_row(es = d.adjusted, reference = "study", n = ni, ci.lb = ci.lb, ci.ub = ci.ub) %>%
   arrange(es) %>%
-  mutate(es = stringr::str_replace(es, fixed(" "), "")) %>%
-  distinct()
+tibble::rowid_to_column("ID") %>%
+  mutate(effective.group =
+           case_when(
+             centile < 25 ~ "Lower (≤25th percentile)",
+             centile > 75 ~ "Upper (≥75th percentile)",
+             centile > 25 ~ "Middle (25th and 75th percentile)",
+             TRUE ~ "Your Service"
+           )) %>%
+  ggplot(aes(x = ID, y = es, col = effective.group)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = ci.lb, ymax = ci.ub)) +
+  theme_bw(base_size = 12)  +
+  scale_x_continuous(expand = c(0.01, 0.01)) +
+  labs(title = paste("Forest plot of effect sizes (and 95% CI) for", group, "outcomes in ", setting, "settings."), x = "Participating Services", y = "Cohen's d", col = NULL) +
+  theme(legend.position = "bottom",
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())
+
+
+
+freedom.mod.table %>%
+  mutate(moderator = str_to_title(moderator),
+         moderator  = recode(moderator,
+                             "Dose" = "Treatment Length",
+                             "Risk Of Bias" = "Overall Risk of Bias",
+                             "Modality" = "Treatment Modality",
+                             "Delivery" = "Treatment Delivery Format")) %>%
+  ggplot(aes(x = level, y = pred)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = ci.lb, ymax = ci.ub)) +
+  geom_hline(aes(yintercept = freedom.report$es),
+             linetype = "dashed",
+             color = "black") +
+  facet_grid(
+    rows = vars(moderator),
+    scales = "free", space = "free", labeller =
+      labeller(moderator = label_wrap_gen(8))
+  ) +
+  coord_flip() +
+  theme_bw() +
+  labs(x = "Sub-group Moderator Level", y = paste("Seizure freedom rate (%)")) +
+  theme(strip.text.y.right = element_text(angle = 270, size = 12, face = "bold"),
+        strip.placement = "left",
+        legend.position = "bottom",
+        plot.title.position = "plot",
+        text = element_text(size = 12),
+        #strip.text = element_text(face = "bold", size = 12),
+        axis.text.x = element_text(size = 12),
+        panel.grid.minor = element_blank()
+  ) + scale_y_continuous(labels = scales::percent)
+
+
+
 
 
 
