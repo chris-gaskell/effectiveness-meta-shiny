@@ -1,5 +1,16 @@
 library(shiny)
 library(tidyverse)
+library(gridExtra)
+library(showtext)
+library(ggtext)
+
+primary_color = "grey"
+main.title.size = 18
+subtitle.size = 15
+plot.text.size = 14
+axis.text = 14
+background_color = "white"
+
  lookup <- read.csv("data/look.up.csv") %>%
    mutate(es = format(es, nsmall = 2)) %>%
    mutate(es = stringr::str_replace(es, fixed(" "), "")) %>%
@@ -25,15 +36,13 @@ library(tidyverse)
            140, 84, 184)
    )
 
+ showtext::showtext_auto()
+
 ui <- fluidPage(
   titlePanel("Benchmarks for Psychological Interventions in Routine Practice"),
   sidebarLayout(
     sidebarPanel(
-      h4("Instructions"),
-      p("Complete the fields in the right hand box from top to bottom before hitting 'calculate'.", style = "font-family: 'times'; font-si16pt"),
-      p("Note. If the pre-to-post-treatment correlation is unknown the we suggest using 0.50 if the correlation is unknown.", style = "font-family: 'times'; font-si16pt"),
-
-
+      textInput("name", "Service Name", value = "your service"),
   selectInput("group",     label = "Outcome Type", choices = c("Depression", "Anxiety", "Other")),
   selectInput("setting",   label = "Service Setting", choices = c("Outpatient", "Inpatient", "All")),
   selectInput("direction", label = "Intended Direction of Change", choices = c("Scores Decrease", "Scores Increase")),
@@ -41,8 +50,9 @@ ui <- fluidPage(
   numericInput("mi",  label = "Pre Mean",    value = 0),
   numericInput("sdi", label = "Pre SD",      value = 0),
   numericInput("mii", label = "Post Mean",   value = 0),
-  numericInput("r",   label = "Reliability", value = 0.5, min = -1, max = 1),
-  submitButton("Calculate")
+  numericInput("r",   label = "Pre-Post Treatment Correlation*", value = 0.5, min = -1, max = 1),
+  p("*Ths is the correlation between pre-treatment and post-treatment measure scores. If this is unknown then we suggest using r = 0.50.", style = "font-family: 'times'; font-si16pt"),
+  submitButton("Calculate"),
     ),
   mainPanel(
     h4("Purpose"),
@@ -50,14 +60,16 @@ ui <- fluidPage(
     br(),
     verbatimTextOutput("es"),
     verbatimTextOutput("rank"),
-  plotOutput("plot", width = "800px", height = "600px"),
+  plotOutput("plot", width = "1000px", height = "600px"),
+  #downloadButton("export", label = "Download"),
+  downloadButton('export', 'Download', class = "butt"),
+  tags$head(tags$style(".butt{background-color:green;} .butt{color: white;}")),
   h4("Citation"),
   p("If using this shiny app for academic purposes then please cite the original article.", style = "font-family: 'times'; font-si16pt"),
 
-  p("Gaskell, Simmonds-Buckley, Kellett, Stockton, Somerville, Rogerson & Delgadillo. (2023). The effectiveness of psychological interventions delivered in routine practice: Systematic review and meta-analysis. Administration and Policy in Mental Health and Mental Health Services Research. 50, 43–57.", style = "font-family: 'times'; font-si16pt"),
-  p("Minami, T., Serlin, R. C., Wampold, B. E., Kircher, J. C., & Brown, G. J. (2008). Using clinical trials to benchmark effects produced in clinical practice. Quality and Quantity, 42(4), 513.", style = "font-family: 'times'; font-si16pt"),
-
-
+  strong("Gaskell, C., Simmonds-Buckley, M., Kellett, S., Stockton, C., Somerville, E,. Rogerson E., & Delgadillo, J. (2023)."), em(" The effectiveness of psychological interventions delivered in routine practice: Systematic review and meta-analysis. Administration and Policy in Mental Health and Mental Health Services Research. 50, 43–57.", style = "font-family: 'times'; font-si16pt"),
+  p(),
+  strong("Minami, T., Serlin, R. C., Wampold, B. E., Kircher, J. C., & Brown, G. J. (2008)."), em(" Using clinical trials to benchmark effects produced in clinical practice. Quality and Quantity, 42(4), 513.", style = "font-family: 'times'; font-si16pt"),
 
     )
   )
@@ -65,6 +77,7 @@ ui <- fluidPage(
 
 )
 server <- function(input, output, session) {
+  service.name <- reactive(input$name)
   d.unadjusted <- reactive(round((input$mi - input$mii) / input$sdi, 2))
   estr <-         reactive(round(input$r + input$r*(1-input$r*input$r)/2/(input$n-4), 2))
   d.adjusted <-   reactive(round((1-3/(4*input$n-5))*d.unadjusted(), 2))
@@ -78,10 +91,12 @@ server <- function(input, output, session) {
   rank <-         reactive(lookup %>% filter(es == d.lookup() & setting == setting() & group == group()) %>% distinct(2, 3, .keep_all = T) %>% select(final.rank))
   k            <- reactive(ks %>% filter(setting == setting() & group == group()) %>% select(k) %>% as.character())
 
-  output$es <-   renderText(paste0("The Cohen's d effect size is ", d.adjusted.2(),
+  output$es <-   renderText(paste0("The Cohen's d effect size for ",service.name()," is ", d.adjusted.2(),
                                    " (95% CI = ", ci.lb(), " to ", ci.ub(), ")."))
-  output$rank <- renderText(paste0("This is the ", rank(), " (this is based on ", k(), " studies)."))
-  output$plot <- renderPlot(
+  output$rank <- renderText(paste0("This is the ", rank(), " (based on ", k(), " studies)."))
+  output$plot <- renderPlot({
+
+    vals$plt1 <-
     norm.datasets %>%
       filter(setting == setting() & group == group()) %>%
       mutate(reference = "benchmarks") %>%
@@ -90,22 +105,59 @@ server <- function(input, output, session) {
       tibble::rowid_to_column("ID") %>%
       mutate(effective.group =
                case_when(
-                 centile < 25 ~ "Lower (≤25th percentile)",
-                 centile > 75 ~ "Upper (≥75th percentile)",
-                 centile > 25 ~ "Middle (25th and 75th percentile)",
-                 TRUE ~ "Your Service"
+                 centile <= 25 ~ "Lower (≤ 25th percentile)",
+                 centile >= 75 ~ "Upper (≥ 75th percentile)",
+                 centile >= 25 ~ "Middle (25th-75th percentile)",
+                 TRUE ~ paste(service.name())
                )) %>%
+      mutate(effective.group = factor(effective.group, levels = c("Lower (≤ 25th percentile)", "Middle (25th-75th percentile)", "Upper (≥ 75th percentile)", paste(service.name())))) %>%
       ggplot(aes(x = ID, y = es, col = effective.group)) +
       geom_point()  +
       geom_errorbar(aes(ymin = ci.lb, ymax = ci.ub)) +
       theme_bw(base_size = 14)  +
       scale_x_continuous(expand = c(0.01, 0.01)) +
-      labs(title = paste("Forest plot of effect sizes (and 95% CI) for", group(), "outcomes in ", setting(), "settings."), x = "Participating Services", y = "Cohen's d", col = NULL) +
+      labs(title = paste("Forest plot of effect sizes (and 95% CI) for", group(), "outcomes in", setting(), "settings."),
+           subtitle = paste("With comparisons to ", service.name(),
+                            " (d=", d.adjusted.2(), ", 95% CI=", ci.lb(), " to ", ci.ub(), ", ", rank(), ").",
+                            sep = ""), x = "Participating Services", y = "Cohen's d", col = NULL) +
       theme(legend.position = "bottom",
             axis.text.x=element_blank(),
-            axis.ticks.x=element_blank())
+            axis.ticks.x=element_blank()) +
+      theme(plot.title.position = "plot")  +
+      theme(
+        plot.background = element_rect(fill = background_color),
+        strip.background =element_rect(fill= primary_color),
+        strip.text = element_text(colour = 'white', face = "bold",
+                                  size = 12),
+        axis.line = element_line(colour = primary_color, size = 1,
+                                 linetype = "solid"),
+        axis.text = element_text(size = axis.text),
+        axis.title = element_text(size = plot.text.size),
+        plot.title = element_text(size = main.title.size, face = "bold"),
+        plot.subtitle = element_text(size = subtitle.size),
+      )
 
-  )
+    vals$plt1
+
+
+  })
+
+  ## The element vals will store all plots and tables
+  vals <- reactiveValues(plt1=NULL)
+
+
+  ## clicking on the export button will generate a pdf file
+  ## containing all stored plots and tables
+  output$export = downloadHandler(
+    filename = function() {"plots.pdf"},
+    content = function(file) {
+      pdf(file, onefile = TRUE, width = 20, height = 12)
+      grid.arrange(vals$plt1,
+                   nrow = 2,
+                   ncol = 2)
+
+      dev.off()
+    })
 
 
 }

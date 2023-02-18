@@ -1,11 +1,11 @@
 
 # cohen's d ---------------------------------------------------------------
 
-ni = 20
-pre.mean = 40
-pre.sd = 4
-post.mean = 35
-r = .4
+ni = 100
+pre.mean = 20
+pre.sd = 8
+post.mean = 23
+r = .5
 
 d.unadjusted <-
   round(
@@ -49,20 +49,20 @@ d.lookup <- format(d.adjusted, nsmall = 2)
 #   distinct()
 #
 
-setting <- "outpatient"
+setting <- "all"
 group <- "other"
 
 norm.datasets %>%
-  filter(setting == "outpatient" & group == "other") %>%
+  filter(setting == "All" & group == "Other") %>%
   mutate(reference = "benchmarks") %>%
   add_row(es = d.adjusted, reference = "study", n = ni, ci.lb = ci.lb, ci.ub = ci.ub) %>%
   arrange(es) %>%
 tibble::rowid_to_column("ID") %>%
   mutate(effective.group =
            case_when(
-             centile < 25 ~ "Lower (≤25th percentile)",
+             centile <=  25 ~ "Lower (≤25th percentile)",
              centile > 75 ~ "Upper (≥75th percentile)",
-             centile > 25 ~ "Middle (25th and 75th percentile)",
+             centile >= 25 ~ "Middle (25th and 75th percentile)",
              TRUE ~ "Your Service"
            )) %>%
   ggplot(aes(x = ID, y = es, col = effective.group)) +
