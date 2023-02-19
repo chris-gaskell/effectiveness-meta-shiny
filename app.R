@@ -3,6 +3,7 @@ library(tidyverse)
 library(gridExtra)
 library(showtext)
 library(ggtext)
+library(ggpubr)
 
 primary_color = "grey"
 main.title.size = 18
@@ -10,6 +11,8 @@ subtitle.size = 15
 plot.text.size = 14
 axis.text = 14
 background_color = "white"
+tbody.style = tbody_style(color = "black",
+                          fill = c("white", "white"), hjust=0.1, x=0.1)
 
  lookup <- read.csv("data/look.up.csv") %>%
    mutate(es = format(es, nsmall = 2)) %>%
@@ -61,15 +64,15 @@ ui <- fluidPage(
     verbatimTextOutput("es"),
     verbatimTextOutput("rank"),
   plotOutput("plot", width = "1000px", height = "600px"),
+  tableOutput("tbl"),
   #downloadButton("export", label = "Download"),
   downloadButton('export', 'Download', class = "butt"),
   tags$head(tags$style(".butt{background-color:green;} .butt{color: white;}")),
   h4("Citation"),
   p("If using this shiny app for academic purposes then please cite the original article.", style = "font-family: 'times'; font-si16pt"),
-
-  strong("Gaskell, C., Simmonds-Buckley, M., Kellett, S., Stockton, C., Somerville, E,. Rogerson E., & Delgadillo, J. (2023)."), em(" The effectiveness of psychological interventions delivered in routine practice: Systematic review and meta-analysis. Administration and Policy in Mental Health and Mental Health Services Research. 50, 43–57.", style = "font-family: 'times'; font-si16pt"),
+  strong("Gaskell, C., Simmonds-Buckley, M., Kellett, S., Stockton, C., Somerville, E,. Rogerson E., & Delgadillo, J. (2023)."), em(" The effectiveness of psychological interventions delivered in routine practice: Systematic review and meta-analysis. Administration and Policy in Mental Health and Mental Health Services Research. 50, 43–57. https://doi.org/10.1007/s10488-022-01225-y", style = "font-family: 'times'; font-si16pt"),
   p(),
-  strong("Minami, T., Serlin, R. C., Wampold, B. E., Kircher, J. C., & Brown, G. J. (2008)."), em(" Using clinical trials to benchmark effects produced in clinical practice. Quality and Quantity, 42(4), 513.", style = "font-family: 'times'; font-si16pt"),
+  strong("Minami, T., Serlin, R. C., Wampold, B. E., Kircher, J. C., & Brown, G. J. (2008)."), em(" Using clinical trials to benchmark effects produced in clinical practice. Quality and Quantity, 42(4), 513. https://doi.org/10.1007/s11135-006-9057-z", style = "font-family: 'times'; font-si16pt"),
 
     )
   )
@@ -91,9 +94,17 @@ server <- function(input, output, session) {
   rank <-         reactive(lookup %>% filter(es == d.lookup() & setting == setting() & group == group()) %>% distinct(2, 3, .keep_all = T) %>% select(final.rank))
   k            <- reactive(ks %>% filter(setting == setting() & group == group()) %>% select(k) %>% as.character())
 
-  output$es <-   renderText(paste0("The Cohen's d effect size for ",service.name()," is ", d.adjusted.2(),
-                                   " (95% CI = ", ci.lb(), " to ", ci.ub(), ")."))
-  output$rank <- renderText(paste0("This is the ", rank(), " (based on ", k(), " studies)."))
+  output$es <-   renderText(ifelse(is.nan(d.adjusted.2()),
+                                   paste0("The Cohen's d effect size for ", service.name()," is..."),
+                                   paste0("The Cohen's d effect size for ", service.name()," is ", d.adjusted.2(), " (95% CI = ", ci.lb(), " to ", ci.ub(), ")."
+                                                 )
+  )
+                            )
+
+  output$rank <- renderText(ifelse(
+    lookup %>% filter(es == d.lookup() & setting == setting() & group == group()) %>% distinct(2, 3, .keep_all = T) %>% select(final.rank) %>% nrow() == 0,
+    "This is the ... percentile rank.", paste0("This is the ", rank(), " (based on ", k(), " studies)."))
+  )
   output$plot <- renderPlot({
 
     vals$plt1 <-
@@ -118,7 +129,17 @@ server <- function(input, output, session) {
       scale_x_continuous(expand = c(0.01, 0.01)) +
       labs(title = paste("Forest plot of effect sizes (and 95% CI) for", group(), "outcomes in", setting(), "settings."),
            subtitle = paste("With comparisons to ", service.name(),
-                            " (d=", d.adjusted.2(), ", 95% CI=", ci.lb(), " to ", ci.ub(), ", ", rank(), ").",
+                            " (d = ",
+                            ifelse(is.nan(d.adjusted.2()), "__", d.adjusted.2()),
+                            ", 95% CI = ",
+                            ifelse(is.nan(ci.lb()), "__", ci.lb()),
+                            " to ",
+                            ifelse(is.nan(ci.ub()), "__", ci.ub()),
+                            ", ",
+                            ifelse(lookup %>% filter(es == d.lookup() & setting == setting() & group == group()) %>% distinct(2, 3, .keep_all = T) %>% select(final.rank) %>% nrow() == 0,
+                              "This is the __ percentile rank.", rank()),
+                            #rank(),
+                            ").",
                             sep = ""), x = "Participating Services", y = "Cohen's d", col = NULL) +
       theme(legend.position = "bottom",
             axis.text.x=element_blank(),
@@ -138,12 +159,39 @@ server <- function(input, output, session) {
       )
 
     vals$plt1
+  })
 
+  ## output table
+  output$tbl <- renderTable({
+
+    tbl_df <- data.frame(
+      Field = c("Service", "Date", "Time",
+                "Pre Mean", "Pre SD", "Post Mean", "Pre-Post Treatment Correlation",
+                "Cohen's d", "95% CI", "Rank"),
+      Input = c(service.name(), paste(format(Sys.time(), "%x")), paste(format(Sys.time(), "%X")),
+                input$mi , input$sdi , input$mii, input$r,
+                d.adjusted.2(), paste(ci.lb(), " to ", ci.ub()), paste(rank()))
+    )
+
+    # store table for printing
+    vals$tbl <- ggtexttable(tbl_df,
+                            rows = NULL,
+                            cols = c(NULL, NULL),
+                            theme = ttheme(
+                              colnames.style = colnames_style(color = "white", fill = "#8cc257"),
+                              tbody.style = tbody.style
+                            )
+
+    )
+    # return table for viewing
+    vals$tbl_df
 
   })
 
+
   ## The element vals will store all plots and tables
-  vals <- reactiveValues(plt1=NULL)
+  vals <- reactiveValues(plt1=NULL,
+                         tbl=NULL)
 
 
   ## clicking on the export button will generate a pdf file
@@ -151,10 +199,11 @@ server <- function(input, output, session) {
   output$export = downloadHandler(
     filename = function() {"plots.pdf"},
     content = function(file) {
-      pdf(file, onefile = TRUE, width = 20, height = 12)
+      pdf(file, onefile = TRUE, width = 14, height = 12)
       grid.arrange(vals$plt1,
+                   vals$tbl,
                    nrow = 2,
-                   ncol = 2)
+                   ncol = 1)
 
       dev.off()
     })

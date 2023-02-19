@@ -1,10 +1,10 @@
 
 # cohen's d ---------------------------------------------------------------
 
-ni = 100
-pre.mean = 20
-pre.sd = 8
-post.mean = 23
+ni = 0
+pre.mean = 0
+pre.sd = 0
+post.mean = 0
 r = .5
 
 d.unadjusted <-
@@ -51,6 +51,9 @@ d.lookup <- format(d.adjusted, nsmall = 2)
 
 setting <- "all"
 group <- "other"
+
+lookup %>% filter(es == d.lookup & setting == setting & group == group) %>%
+  distinct(2, 3, .keep_all = T) %>% select(final.rank) %>% nrow()
 
 norm.datasets %>%
   filter(setting == "All" & group == "Other") %>%
