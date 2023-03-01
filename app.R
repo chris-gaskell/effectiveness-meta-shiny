@@ -4,6 +4,8 @@ library(gridExtra)
 library(showtext)
 library(ggtext)
 library(ggpubr)
+library(bslib)
+
 
 primary_color = "grey"
 main.title.size = 18
@@ -13,6 +15,8 @@ axis.text = 14
 background_color = "white"
 tbody.style = tbody_style(color = "black",
                           fill = c("white", "white"), hjust=0.1, x=0.1)
+lay <- rbind(c(1,1),
+             c(2,3))
 
  lookup <- read.csv("data/look.up.csv") %>%
    mutate(es = format(es, nsmall = 2)) %>%
@@ -42,6 +46,8 @@ tbody.style = tbody_style(color = "black",
  showtext::showtext_auto()
 
 ui <- fluidPage(
+  tags$head(includeHTML(("google-analytics.html"))),
+  theme = bslib::bs_theme(bootswatch = 'readable'),
   titlePanel("Benchmarks for Psychological Interventions in Routine Practice"),
   sidebarLayout(
     sidebarPanel(
@@ -65,6 +71,7 @@ ui <- fluidPage(
     verbatimTextOutput("rank"),
   plotOutput("plot", width = "1000px", height = "600px"),
   tableOutput("tbl"),
+  tableOutput("cit"),
   #downloadButton("export", label = "Download"),
   downloadButton('export', 'Download', class = "butt"),
   tags$head(tags$style(".butt{background-color:green;} .butt{color: white;}")),
@@ -179,7 +186,7 @@ server <- function(input, output, session) {
                             cols = c(NULL, NULL),
                             theme = ttheme(
                               colnames.style = colnames_style(color = "white", fill = "#8cc257"),
-                              tbody.style = tbody.style
+                              #tbody.style = tbody.style
                             )
 
     )
@@ -189,9 +196,41 @@ server <- function(input, output, session) {
   })
 
 
+
+
+  ## output table
+  output$cit <- renderTable({
+
+    cit_df <- data.frame(
+      type = c("Benchmarks & Shiny App:", "Effect-size Calculation:"),
+      citation = c("Gaskell et al., (2023). https://doi.org/10.1007/s10488-022-01225-y",
+                   "Minami et al., (2008). https://doi.org/10.1007/s11135-006-9057-z"
+    ))
+
+    # store table for printing
+    vals$cit <- ggtexttable(cit_df,
+                            rows = NULL,
+                            cols = c(NULL, NULL),
+                            theme = ttheme(
+                              colnames.style = colnames_style(color = "white", fill = "#8cc257"),
+                              tbody.style = tbody.style
+                            )
+
+    )
+    # return table for viewing
+    vals$cit_df
+
+  })
+
+
+
+
+
   ## The element vals will store all plots and tables
   vals <- reactiveValues(plt1=NULL,
-                         tbl=NULL)
+                         cit_df=NULL,
+                         tbl=NULL
+                         )
 
 
   ## clicking on the export button will generate a pdf file
@@ -202,8 +241,10 @@ server <- function(input, output, session) {
       pdf(file, onefile = TRUE, width = 14, height = 12)
       grid.arrange(vals$plt1,
                    vals$tbl,
-                   nrow = 2,
-                   ncol = 1)
+                   vals$cit,
+                   #nrow = 2,
+                   #ncol = 1,
+                   layout_matrix = lay)
 
       dev.off()
     })
