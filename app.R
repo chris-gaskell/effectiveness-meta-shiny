@@ -60,7 +60,7 @@ ui <- fluidPage(
   numericInput("sdi", label = "Pre SD",      value = 0),
   numericInput("mii", label = "Post Mean",   value = 0),
   numericInput("r",   label = "Pre-Post Treatment Correlation*", value = 0.5, min = -1, max = 1),
-  p("*Ths is the correlation between pre-treatment and post-treatment measure scores. If this is unknown then we suggest using r = 0.50.", style = "font-family: 'times'; font-si16pt"),
+  p("*This is the correlation between pre-treatment and post-treatment measure scores. If this is unknown then we suggest using r = 0.50.", style = "font-family: 'times'; font-si16pt"),
   submitButton("Calculate"),
     ),
   mainPanel(
