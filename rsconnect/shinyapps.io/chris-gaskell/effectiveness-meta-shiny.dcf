@@ -5,9 +5,9 @@ account: chris-gaskell
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 8276296
-bundleId: 6906220
+bundleId: 6950978
 url: https://chris-gaskell.shinyapps.io/effectiveness-meta-shiny/
-when: 1677749794.97433
-lastSyncTime: 1677749794.97434
+when: 1678695382.23798
+lastSyncTime: 1678695382.23799
 asMultiple: FALSE
 asStatic: FALSE

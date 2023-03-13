@@ -1,10 +1,10 @@
 
 # cohen's d ---------------------------------------------------------------
 
-ni = 0
-pre.mean = 0
-pre.sd = 0
-post.mean = 0
+ni = 1646
+pre.mean = 14.96
+pre.sd = 3.28
+post.mean = 10.15
 r = .5
 
 d.unadjusted <-
@@ -116,4 +116,16 @@ freedom.mod.table %>%
 
 
 
+
+
+
+
+d.unadjusted <- round((pre.mean - post.mean) / pre.sd, 2)
+estr <-         round(r + r*(1-r*r)/2/(ni-4), 2)
+d.adjusted <-   round((1-3/(4*ni-5))*d.unadjusted, 2)
+#d.adjusted.2 <- if (input$direction == "scores increase") {d.adjusted()*-1} else {d.adjusted()})
+var <-
+  round(2*(1-estr)/ni+d.adjusted*d.adjusted/(2*ni), 4)
+ci.lb <-        round(d.adjusted-1.96*sqrt(var), 2)
+ci.ub <-        round(d.adjusted+1.96*sqrt(var), 2)
 
